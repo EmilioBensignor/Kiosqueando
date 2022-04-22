@@ -1,0 +1,766 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* Página Index y comandos generales */
+body{
+    background-image: url(../resource/fondogolosinas.jpg);
+    background-size: contain;
+}
+/* Menú de Navegación */
+.logo{
+    height: 3.5cm;
+    width: 3.5cm;
+    border: 3.5px solid #b65c02;
+    border-radius: 10px;
+}
+.navA{
+    text-decoration: none;
+    border: 4.5px solid #712300;
+    border-radius: 5px;
+    color: black;
+    background-color: #b65c02;
+    padding: 5px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 12px 25px;
+    margin: 5px;
+}
+header{
+    border-bottom: 5px dashed #712300;
+    margin: 5px 0px 30px 0px;
+}
+/* Título */
+.divH1{
+    display: flex;
+    justify-content: center;
+    background-color: #ff9800;
+    width: 30cm;
+    border-radius: 7px;
+    border: 4px solid #b65c02;
+    margin: 10px 4cm;
+    align-items: baseline;
+}
+h1{
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    font-size: 2.8cm;
+    font-weight:bolder;
+    margin: 15px;
+}
+/* Banner */
+.divprincipal{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.bannerprincipal{
+    height: 400px;
+    width: 90%;
+    border: 5px solid #b65c02;
+    border-radius: 10px;
+}
+/* Novedades de productos */
+/* Producto 1 */
+.sectionIndex{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffcc50;
+    width: 95%;
+    margin: 30px 20px 30px 30px;
+    border-radius: 10px;
+    border: 5px solid #ff9800;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.div2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    background-color: #ffc548;
+    border-radius: 10px;
+    border: 3px solid #ff9800;
+}
+.div3{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.psandias{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+    font-family: "Montserrat";
+}
+.sandias{
+    width: 500px;
+    height: 420px;
+}
+.carrito{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.estrellasIndex{
+    height: 60%;
+    width: 60%;
+}
+.compra{
+    height: 10%;
+}
+h2{
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: flex-start;
+    font: bold;
+}
+/* Producto 2 */
+.pmilka{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+    font-family: "Montserrat";
+}
+.milkaoreo{
+    width: 500px;
+    height: 420px;
+}
+/* Publicidad */
+.aside{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.imgAside{
+    width: 60%;
+    height: 3%;
+    border: solid #b65c02;
+    border-radius: 10px;
+}
+/* Footer */
+footer{
+    color: white;
+    font-size: 10px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    border-top: solid black;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-youtube{
+    background: red;
+    color: white;
+}
+.fa-instagram{
+    background-color: darkblue;
+    color: white;
+}
+.redesSociales{
+    background-color: #ffff89;
+}
+.copyright{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    color: black;
+}
+
+/* Página Ranking */
+/* La publicidad Aside va a ir del lado izquierdo seguramente con grid. Por eso la tabla esta corrida */
+/* Tabla */
+table{
+    display: flex;
+    border: 5px solid #712300;
+    border-radius: 10px;
+    margin: 30px 5.8cm 30px 5cm;
+    background-color: #ffc548;
+    padding: 10px;
+    font-family: "Montserrat";
+}
+.tabla{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-collapse: collapse;
+}
+td{
+    border: solid black;
+    padding: 5px;
+}
+th{
+    border: solid black;
+    padding: 5px;
+}
+/* Top 1*/
+.divTop1{
+    display: flex;
+    font-family: "Montserrat";
+    background-color:#ffc548;
+    border:#b65c02 4px solid;
+    border-radius: 35px;
+    margin: 30px 2cm 30px 10cm;
+    padding: 15px;
+    flex-direction: column;
+    width: 40%;
+}
+.divPalitos{
+    display: flex;
+    flex-direction: row;
+}
+.imgPalitos{
+    width: 70%;
+    height: 70%;
+    background-color: #ffc548;
+    border: solid #ff9800 3px;
+    border-radius: 70px;
+}
+
+/* Explicación */
+.h3Rank{
+    font-size: x-large;
+    margin: 0px 0px 10px 0px;
+}
+.divExplicacion{
+    display: flex;
+    font-family: "Montserrat";
+    background-color:#ff9800;
+    border:#712300 4px solid;
+    border-radius: 35px;
+    margin: 30px 5.8cm 30px 5cm;
+    padding: 15px;
+    flex-direction: column;
+}
+.divPexplicacion{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+/* Publicidad */
+.fifa{
+    width: 60%;
+    height: 3%;
+    border: solid #b65c02;
+    border-radius: 10px;
+}
+
+/* Página Compras */
+
+.div-dosCompras{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Grid - Compra */
+.divCompras{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+    "h2c texto texto"
+    "foto precio estrellas"
+    "foto compra carrito";
+    background-color: #ffcc50;
+    border-radius: 10px;
+    border: 5px solid #ff9800;
+    width: 45%;
+    padding: 10px;
+    margin: 1%;
+}
+
+.itemH2{
+    grid-area: h2c;
+    font-family: "Montserrat";
+    height: 30%;
+    width: 70%;
+}
+.itemFoto{
+    grid-area: foto;
+    width: 120%;
+    height: 90%;
+    margin: -65px 0px 0px 0px;
+}
+.itemTexto{
+    grid-area: texto;
+    font-family: "Montserrat";
+    margin: 60px 10px 10px 60px;
+    padding: 5px;
+    border: 3px solid #b65c02;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    width: 80%;
+    height: 85%;
+}
+.itemPrecio{
+    grid-area: precio;
+    font-family: "Montserrat";
+    font-size: x-large;
+    margin: 50px 0px 0px 60px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemEstrellas{
+    grid-area: estrellas;
+    width: 90%;
+    height: 58%;
+    margin: 50px 0px 0px 5px;
+}
+.itemCompra{
+    grid-area: compra;
+    height: 20%;
+    width: 50%;
+    margin: 50px 0px 0px 5cm;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.itemCarrito{
+    grid-area: carrito;
+    height: 80%;
+    width: 40%;
+    margin: 10px 5px 0px 3cm;
+}
+/* Publicidad */
+.itemAside{
+    display: flex;
+    justify-content: center;
+}
+.fender{
+    border: 7px solid #712300;
+    border-radius: 20px;
+    margin: 30px 10px 10px 10px;
+    height: 20%;
+    width: 50%;
+}
+
+/* Página Novedades */
+
+/* Grid - Página de Novedades */
+.divNovedades{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "video1 video1"
+    "nov1 nov2"
+    "video2 video2"
+    "nov3 nov4";
+}
+
+.itemVideo1{
+    grid-area: video1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffc548;
+    border: #b65c02 solid 5px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px 20px 3.6cm;
+    width: 80%;
+}
+
+.itemNov1{
+    grid-area: nov1;
+    background-color: #ffc548;
+    opacity: 0.93;
+    border: #b65c02 solid 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    margin: 10px 10px 10px 2.2cm;
+}
+.itemNov2{
+    grid-area: nov2;
+    background-color: #ffc548;
+    opacity: 0.93;
+    border: #b65c02 solid 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    margin: 10px 2cm 10px 0.6cm;
+}
+.itemVideo2{
+    grid-area: video2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffc548;
+    border: #b65c02 solid 5px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px 20px 3.6cm;
+    width: 80%;
+}
+
+.itemNov3{
+    grid-area: nov3;
+    background-color: #ffc548;
+    opacity: 0.93;
+    border: #b65c02 solid 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    margin: 10px 10px 10px 2.2cm;
+}
+.itemNov4{
+    grid-area: nov4;
+    background-color: #ffc548;
+    opacity: 0.93;
+    border: #b65c02 solid 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    margin: 10px 50px 10px 0.6cm;
+}
+
+.h2Nov{
+    font-family: "Montserrat";
+    font: bold;
+    font-size: xx-large;
+}
+.pNov{
+    font-family: "Montserrat";
+    font-size: x-large;
+    font-style: oblique;
+    text-decoration: underline;
+    margin: 5px;
+}
+.videoNov{
+    width: 800px;
+    height: 430px;
+    margin: 10px;
+}
+.h3Nov{
+    font-family: "Montserrat";
+    font-size: x-large;
+    text-decoration: underline wavy;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+.imgNov{
+    width: 65%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+}
+
+/* Publicidad */
+.netflix{
+    width: 60%;
+    height: 5cm;
+    border: solid #712300 5px;
+    border-radius: 10px;
+}
+
+/* Página Contacto */
+.sectionForm{
+    background-color: #ffc548;
+    border: #b65c02 solid 3px;
+    border-radius: 15px;
+    font-family: "Montserrat";
+    margin: 20px;
+    padding: 20px;
+}
+.h2Form{
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: flex-start;
+    font: bold;
+    margin: 10px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border:#b65c02 solid 2px;
+    border-radius: 5px;
+}
+.divNyA{
+    display: flex;
+    flex-direction: row;
+}
+.divNombre{
+    margin: 5px;
+}
+.divApellido{
+    margin: 5px;
+}
+.divEyT{
+    display: flex;
+    flex-direction: row;
+}
+.divEmail{
+    margin: 5px;
+}
+.divTelefono{
+    margin: 5px;
+}
+.divBarrio{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+.pBarrio{
+    margin: 3px;
+}
+.divComentarios{
+    margin: 5px;
+}
+.textarea{
+    border-radius: 10px;
+    margin: 5px;
+}
+.divRecibir{
+    margin: 5px;
+}
+.divFinal{
+    background-color: #ffc548;
+    border: #b65c02 solid 3px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5cm;
+    margin: 20px 2cm 20px 2cm;
+}
+
+/* Media 320px */
+
+@media screen and (max-width: 320px){
+/* Página Index y comandos generales */
+    body{
+        background-size:cover;
+    }
+/* Menú de Navegación */
+    .logo{
+        height: 5.5cm;
+        width: 5cm;
+    }
+    .navA{
+        padding: 10px;
+        margin: 25px;
+    }
+    ul{
+        font-size: 0.8cm;
+        padding: 30px;
+        margin: 10px;
+    }
+    header{
+        width: 35cm;
+    }
+/* Título */
+    .divH1{
+        width: 30cm;
+        margin: 50px 10px 30px 50px;
+    }
+    h1{
+        font-size: 2.8cm;
+        margin: 15px;
+    }
+/* Banner */
+    .divprincipal{
+        margin: 60px;
+        padding: 20px;
+        width: 29cm;
+    }
+    .bannerprincipal{
+        height: 13cm;
+        width: 95%;
+    }
+/* Novedades de productos */
+/* Producto 1 */
+    .sectionIndex{
+        width: 30cm;
+        margin: 30px 20px 30px 30px;
+    }
+    h2{
+        font-size: 1cm;
+    }
+/* Producto 2 */
+/* Aside */
+    .aside{
+        width: 30cm;
+    }
+/* Footer */
+    footer{
+        width: 35cm;
+    }
+/* Página Ranking */
+/* La publicidad Aside va a ir del lado izquierdo seguramente con grid. Por eso la tabla esta corrida */
+/* Tabla */
+    table{
+    margin: 30px 5.8cm 30px 5cm;
+    padding: 10px;
+    width: 25cm;
+}
+/* Top 1*/
+.divTop1{
+    margin: 30px 2.5cm 30px 10cm;
+    width: 15cm;
+}
+/* Explicación */
+.h3Rank{
+    font-size: x-large;
+    margin: 0px 0px 10px 0px;
+}
+.divExplicacion{
+    margin: 30px 6cm 30px 4.5cm;
+    width: 25cm;
+}
+.divPexplicacion{
+    line-height: 25px;
+}
+
+/* Publicidad */
+.fifa{
+    width: 60%;
+    height: 3%;
+}
+
+/* Página Compras*/
+
+.divCompras{
+    width: 170%;
+    padding: 15px;
+    margin: 10px 10px 10px 30px;
+}
+.itemH2{
+    height: 30%;
+    width: 70%;
+}
+.itemFoto{
+    width: 120%;
+    height: 90%;
+    margin: -65px 0px 0px 0px;
+}
+.itemTexto{
+    margin: 60px 10px 10px 60px;
+    width: 80%;
+    height: 110%;
+}
+.itemPrecio{
+    margin: 120px 0px 0px 60px;
+}
+.itemEstrellas{
+    width: 90%;
+    height: 50%;
+    margin: 100px 0px 0px 5px;
+}
+.itemCompra{
+    width: 60%;
+    margin: 60px 0px 0px 4cm;
+}
+.itemCarrito{
+    height: 65%;
+    width: 40%;
+    margin: 20px 3cm 0px 3cm;
+}
+/* Publicidad */
+.fender{
+    margin: 30px 10px 30px 25cm;
+    height: 100%;
+    width: 200%;
+}
+
+/* Página Novedades*/
+
+.itemVideo1{
+    padding: 15px;
+    margin: 20px 10px 20px 3.6cm;
+    width: 300%;
+}
+.itemNov1{
+    width: 300%;
+    padding: 15px;
+    margin: 10px 13cm 10px 2.2cm;
+}
+.itemNov2{
+    width: 300%;
+    padding: 15px;
+    margin: 10px 2cm 10px 13cm;
+}
+.itemVideo2{
+    padding: 15px;
+    margin: 20px 10px 20px 3.6cm;
+    width: 300%;
+}
+.itemNov3{
+    width: 300%;
+    padding: 15px;
+    margin: 10px 13cm 10px 2.2cm;
+}
+.itemNov4{
+    width: 300%;
+    padding: 15px;
+    margin: 10px 2cm 10px 13cm;
+}
+.videoNov{
+    margin: 15px;
+}
+.imgNov{
+    width: 65%;
+    height: 65%;
+}
+/* Publicidad */
+.netflix{
+    width: 60%;
+    height: 5cm;
+    border: solid #712300 5px;
+    border-radius: 10px;
+    margin: 10px 0px 10px 2cm;
+}
+
+/* Página Contacto */
+.sectionForm{
+    margin: 20px 0px 20px 50px;
+    padding: 20px;
+    width: 29cm;
+}
+.divFinal{
+    font-size: 2.5cm;
+    margin: 20px 2cm 20px 2cm;
+    width: 30cm;
+}
+}
