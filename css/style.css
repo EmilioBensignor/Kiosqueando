@@ -79,7 +79,11 @@ h1{
     justify-content: center;
     }
 .fotosBanner{
-    border:;
+    border: 5px solid #712300;
+    border-radius: 20px;
+}
+.banner{
+    border-radius: 20px;
 }
 /* Novedades de productos */
 /* Producto 1 */
