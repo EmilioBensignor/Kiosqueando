@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Kiosqueando</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Palette+Mosaic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Palette+Mosaic&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header>
         <!-- Menú de Navegación y Logo -->
-        <nav>
-            <ul>
-                <div>
-                    <a href="../index.html">
-                        <img class="logo" src="../resource/logo.png">
-                    </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../resource/logo.png" class="d-inline-block align-text-top logo">
+                    <p class="navP">Kiosqueando</p>
+                </a>
+            </div>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ranking.html">Ranking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="compras.html">Compras</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Novedades
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="novedades.html">Gomitas</a></li>
+                                <li><a class="dropdown-item" href="novedades.html">Chupetines</a></li>
+                                <li><a class="dropdown-item" href="novedades.html">Chocolates</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-                <li><a class="navA" href="../index.html">Inicio</a></li>
-                <li><a class="navA" href="ranking.html">Ranking</a></li>
-                <li><a class="navA" href="compras.html">Compras</a></li>
-                <li><a class="navA" href="novedades.html">Novedades</a></li>
-                <li><a class="navA" href="contacto.html">Contacto</a></li>
-            </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -36,80 +61,102 @@
         </div>
         <div class="div-dosCompras">
             <!-- Compra 1 -->
-            <div class="divCompras">
-                <h2 class="itemH2">Pico Dulce</h2>
-                <img class="itemFoto" src="../resource/picodulce.png">
-                <p class="itemTexto">
-                    Un chupetín clásico. Un mix de sabores ideal para el paladar. Para recreos, salidas del colegio o para solo disfrutar. Su sabor excepcional lo hace único. El pico dulce es la golosina perfecta que tenes que comprar
-                </p>
-                <p class="itemPrecio">$25</p>
-                <img class="itemEstrellas" src="../resource/cuatroymedio.png">
-                <img class="itemCarrito" src="../resource/carrito.png">
-                <input class="itemCompra" type="button" value="Añadir a carrito">  
+            <div class="card" style="width: 45%;">
+                <img src="../resource/picodulce.png" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Pico Dulce</h3>
+                    <p class="card-text">Un chupetín clásico. Un mix de sabores ideal para el paladar. Para recreos, salidas
+                        del colegio o para solo disfrutar. Su sabor excepcional lo hace único. El pico dulce es la golosina
+                        perfecta que tenes que comprar</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item precio">$25</li>
+                    <li><img class="estrellas" src="../resource/cuatroymedio.png"></li>
+                </ul>
+                <div class="list-group-item">
+                    <input class="botonCompra" type="button" value="Añadir a carrito">
+                </div>
             </div>
             <!-- Compra 2 -->
-            <div class="divCompras">
-                <h2 class="itemH2">Lenguetazo</h2>
-                <img class="itemFoto" src="../resource/lenguetazo.png">
-                <p class="itemTexto">
-                    Caramelo masticable con ¡forma de lengua! Es el caramelo divertido que necesitas en esos momentos de tristeza. El lenguetazo se conoce por su sabor a tutti frutti y sus otras variantes. Pero ojo, podrían hasta pintarte la lenga
-                </p>
-                <p class="itemPrecio">$30</p>
-                <img class="itemEstrellas" src="../resource/cuatroymedio.png">
-                <img class="itemCarrito" src="../resource/carrito.png">
-                <input class="itemCompra" type="button" value="Añadir a carrito">
+            <div class="card" style="width: 45%;">
+                <img src="../resource/lenguetazo.png" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Lenguetazo</h3>
+                    <p class="card-text">Caramelo masticable con ¡forma de lengua! Es el caramelo divertido que necesitas en esos momentos de
+                        tristeza. Sabor original de tutti frutti, pero con muchas otras variantes. Pero ojo,
+                        podrían hasta pintarte la lenga</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$30</li>
+                    <li><img class="estrellas" src="../resource/cuatroymedio.png"></li>
+                </ul>
+                <div class="list-group-item">
+                    <input class="botonCompra" type="button" value="Añadir a carrito">
+                </div>
             </div>
         </div>
         <div class="div-dosCompras">
             <!-- Compra 3 -->
-            <div class="divCompras">
-                <h2 class="itemH2">Bazooka</h2>
-                <img class="itemFoto" src="../resource/bazooka.png">
-                <p class="itemTexto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur enim qui velit! Harum placeat eos minus ipsum odit asperiores deserunt ullam esse voluptatem repellendus dolorem dolores, aut consequuntur, magni doloremque.
-                </p>
-                <p class="itemPrecio">$5</p>
-                <img class="itemEstrellas" src="../resource/cuatroymedio.png">
-                <img class="itemCarrito" src="../resource/carrito.png">
-                <input class="itemCompra" type="button" value="Añadir a carrito">  
+            <div class="card" style="width: 45%;">
+                <img src="../resource/bazooka.png" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Bazooka</h3>
+                    <p class="card-text"> El mejor chicle para hacer globo que vas a encontrar. Sabor encandilante y la textura perfecta para poder disfrutar del chicle no solo por su sabor</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$5</li>
+                    <li><img class="estrellas" src="../resource/cuatroymedio.png"></li>
+                </ul>
+                <div class="list-group-item">
+                    <input class="botonCompra" type="button" value="Añadir a carrito">
+                </div>
             </div>
             <!-- Compra 4 -->
-            <div class="divCompras">
-                <h2 class="itemH2">Bananita Dolca</h2>
-                <img class="itemFoto" src="../resource/bananita dolca.png">
-                <p class="itemTexto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur enim qui velit! Harum placeat eos minus ipsum odit asperiores deserunt ullam esse voluptatem repellendus dolorem dolores, aut consequuntur, magni doloremque.
-                </p>
-                <p class="itemPrecio">$40</p>
-                <img class="itemEstrellas" src="../resource/cuatroymedio.png">
-                <img class="itemCarrito" src="../resource/carrito.png">
-                <input class="itemCompra" type="button" value="Añadir a carrito">  
+            <div class="card" style="width: 45%;">
+                <img src="../resource/bananita dolca.png" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Bananita Dolca</h3>
+                    <p class="card-text">¡Llegó la Bananita Dolca! La combinación de chocolate y banana en un balance perfecto. Sabor, amor y recuerdos es lo que te podes encontrar cuando compres una Bananita Dolca</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$40</li>
+                    <li><img class="estrellas" src="../resource/cuatroymedio.png"></li>
+                </ul>
+                <div class="list-group-item">
+                    <input class="botonCompra" type="button" value="Añadir a carrito">
+                </div>
             </div>
         </div>
         <div class="div-dosCompras">
             <!-- Compra 5 -->
-            <div class="divCompras">
-                <h2 class="itemH2">Sapito</h2>
-                <img class="itemFoto" src="../resource/sapito.png">
-                <p class="itemTexto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur enim qui velit! Harum placeat eos minus ipsum odit asperiores deserunt ullam esse voluptatem repellendus dolorem dolores, aut consequuntur, magni doloremque.
-                </p>
-                <p class="itemPrecio">$20</p>
-                <img class="itemEstrellas" src="../resource/cuatroymedio.png">
-                <img class="itemCarrito" src="../resource/carrito.png">
-                <input class="itemCompra" type="button" value="Añadir a carrito">  
+            <div class="card" style="width: 45%;">
+                <img src="../resource/sapito.png" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Sapito</h3>
+                    <p class="card-text">El sapito el chocolate más divertido de todos. Muchos sabores para elegir, pero recomendamos el de Dulce de Leche, no va a fallar ¡nunca! Chocolate por fuera y por dentro el sabor que quieras elegir. ¿Quién no se acuerda la clásica canción del Sapito? Acá lo tenes de vuelta, nueva golosina, mismo sabor</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$20</li>
+                    <li><img class="estrellas" src="../resource/cuatroymedio.png"></li>
+                </ul>
+                <div class="list-group-item">
+                    <input class="botonCompra" type="button" value="Añadir a carrito">
+                </div>
             </div>
             <!-- Compra 6 -->
-            <div class="divCompras">
-                <h2 class="itemH2">Bulldog</h2>
-                <img class="itemFoto" src="../resource/bulldog.png">
-                <p class="itemTexto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur enim qui velit! Harum placeat eos minus ipsum odit asperiores deserunt ullam esse voluptatem repellendus dolorem dolores, aut consequuntur, magni doloremque.
-                </p>
-                <p class="itemPrecio">$35</p>
-                <img class="itemEstrellas" src="../resource/cuatroymedio.png">
-                <img class="itemCarrito" src="../resource/carrito.png">
-                <input class="itemCompra" type="button" value="Añadir a carrito">  
+            <div class="card" style="width: 45%;">
+                <img src="../resource/bulldog.png" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Bull Dog</h3>
+                    <p class="card-text">La golosina distinta, es el Bull Dog. Múltiples sabores para elegir, todos los que te puedas imaginar. Acá tenemos todos los que quieras, si compras uno YA te podes llevar otro a ¡mitad de precio!</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$35</li>
+                    <li><img class="estrellas" src="../resource/cuatroymedio.png"></li>
+                </ul>
+                <div class="list-group-item">
+                    <input class="botonCompra" type="button" value="Añadir a carrito">
+                </div>
             </div>
         </div>
     </main>
@@ -129,5 +176,9 @@
             <a href="https://www.instagram.com/" class="fa fa-instagram" target='_blank'></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
