@@ -3,28 +3,19 @@
     margin: 0;
     list-style: none;
 }
+
 /* Página Index y comandos generales */
 body{
     background-image: url(../resource/fondogolosinas.jpg);
     background-size: contain;
 }
+
 /* Menú de Navegación */
-.logo{
-    height: 3.5cm;
-    width: 3.5cm;
-    border: 3.5px solid black;
-    border-radius: 10px;
-}
-nav{
-    background-image: linear-gradient(to right, #712300, #b65c02, #ff9800, #ffc548);
-}
+/* Nav Bootstrap */
 .navbar-brand{
     display: flex;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.navP{
-    margin: 0px 0px 0px 5px;
 }
 .navbar-collapse{
     display: flex;
@@ -49,10 +40,25 @@ nav{
 .dropdown-item:hover{
     background-color: #ff9800;
 }
+
+/* Nav CSS */
+.logo{
+    height: 3.5cm;
+    width: 3.5cm;
+    border: 3.5px solid black;
+    border-radius: 10px;
+}
+nav{
+    background-image: linear-gradient(to right, #712300, #b65c02, #ff9800, #ffc548);
+}
+.navP{
+    margin: 0px 0px 0px 5px;
+}
 header{
     margin: 0px 0px 30px 0px;
     border-bottom: #4b3400 dashed 3px;
 }
+
 /* Título */
 .divH1{
     display: flex;
@@ -72,6 +78,7 @@ h1{
     font-weight:bolder;
     margin: 15px;
 }
+
 /* Carousel */
 .carusel{
     display: flex;
@@ -85,6 +92,7 @@ h1{
 .banner{
     border-radius: 20px;
 }
+
 /* Novedades de productos */
 /* Producto 1 */
 .sectionIndex{
@@ -145,6 +153,7 @@ h2{
     justify-content: flex-start;
     font: bold;
 }
+
 /* Producto 2 */
 .pmilka{
     display: flex;
@@ -156,6 +165,7 @@ h2{
     width: 500px;
     height: 420px;
 }
+
 /* Publicidad */
 .aside{
     display: flex;
@@ -215,7 +225,7 @@ footer{
 }
 
 /* Página Ranking */
-/* La publicidad Aside va a ir del lado izquierdo seguramente con grid. Por eso la tabla esta corrida */
+
 /* Tabla */
 table{
     display: flex;
@@ -240,6 +250,7 @@ th{
     border: solid black;
     padding: 5px;
 }
+
 /* Top 1*/
 .divTop1{
     display: flex;
@@ -305,6 +316,7 @@ th{
     height: 10%;
     margin: 10px;
 }
+
 /* Publicidad */
 .fifa{
     width: 60%;
@@ -314,10 +326,11 @@ th{
 }
 
 /* Página Compras */
-.div-dosCompras{
+.card-columns{
     display: flex;
     flex-direction: row;
-    margin: 10px 10px 10px 2.8cm;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Compra */
@@ -325,13 +338,14 @@ th{
     background-color: #ffc548;
     border: #ff9800 solid 3px;
     border-radius: 10px;
-    margin: 10px;
-    height: 100%;
+    margin: 12px 10px 12px 30px;
+    height:max-content;
+    width: 30%;
 }
 .card-img-top{
     width: 40%;
     height: 20%;
-    padding: 10px;
+    padding: 10px 10px 10px 15px;
 }
 .card-title{
     font-family: "Montserrat";
@@ -344,9 +358,10 @@ th{
     font-size: larger;
 }
 .botonCompra{
-    width: 30%;
+    width: 40%;
 }
 .estrellas{
+    padding: 2px 5px 2px 5px;
     width: 40%;
     height: 40%;
 }
@@ -365,7 +380,6 @@ th{
 }
 
 /* Página Novedades */
-
 /* Grid - Página de Novedades */
 .divNovedades{
     display: grid;
@@ -377,7 +391,6 @@ th{
     "nov3 nov4"
     ;
 }
-
 .itemVideo1{
     grid-area: video1;
     display: flex;
@@ -400,6 +413,7 @@ th{
     flex-direction: column;
     align-items: center;
     width: 80%;
+    height: 90%;
     padding: 15px;
     margin: 10px 10px 10px 2.2cm;
 }
@@ -413,6 +427,7 @@ th{
     flex-direction: column;
     align-items: center;
     width: 80%;
+    height: 90%;
     padding: 15px;
     margin: 10px 2cm 10px 0.6cm;
 }
@@ -438,6 +453,7 @@ th{
     flex-direction: column;
     align-items: center;
     width: 80%;
+    height: 90%;
     padding: 15px;
     margin: 10px 10px 10px 2.2cm;
 }
@@ -451,6 +467,7 @@ th{
     flex-direction: column;
     align-items: center;
     width: 80%;
+    height: 90%;
     padding: 15px;
     margin: 10px 50px 10px 0.6cm;
 }
@@ -480,8 +497,8 @@ th{
     justify-content: center;
 }
 .imgNov{
-    width: 65%;
-    height: 65%;
+    width: 50%;
+    height: 30%;
     display: flex;
     align-items: center;
     animation-name: golosina;
@@ -524,7 +541,11 @@ th{
 }
 
 /* Página Contacto */
-
+.formularioContacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .formulario{
     border: 4px solid #712300;
     border-radius: 10px;
@@ -533,21 +554,13 @@ th{
     background-color: #ffc548;
     width: 80%;
 }
-.formularioContacto{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.formItem{
-    margin: 1%;
+.btnForm{
+    border: #b65c02 solid 2px;
 }
 .boton{
     padding: 1px;
     width: 8.5%;
     margin-left: 1%;
-}
-.btnForm{
-    border: #b65c02 solid 2px;
 }
 .divFinal{
     background-color: #ffc548;
@@ -562,201 +575,680 @@ th{
     height: 5cm;
 }
 
-/* Media 320px */
+/* MEDIA QUERIES*/
+
+/* MEDIA 320px */
 
 @media screen and (max-width: 320px){
-/* Página Index y comandos generales */
+    /* Página INDEX y comandos generales */
     body{
         background-size:cover;
     }
-/* Menú de Navegación */
+    .nav-item{
+        margin: 5px;
+        border-radius: 5px;
+        padding: 3px;
+    }
+    
+    /* Nav CSS */
     .logo{
-        height: 5.5cm;
+        height: 5cm;
         width: 5cm;
+        margin: 5px;
     }
-    .navA{
-        padding: 10px;
-        margin: 25px;
-    }
-    ul{
-        font-size: 0.8cm;
-        padding: 30px;
-        margin: 10px;
+    .navP{
+        font-size: larger;
     }
     header{
-        width: 35cm;
+        margin: 0px 0px 30px 0px;
+        width: 34cm;
     }
-/* Título */
+    
+    /* Título */
     .divH1{
         width: 30cm;
-        margin: 50px 10px 30px 50px;
+        border-radius: 7px;
+        border: 4px solid #b65c02;
+        margin: 20px 70px;
     }
-    h1{
-        font-size: 2.8cm;
-        margin: 15px;
-    }
-/* Banner */
-    .divprincipal{
-        margin: 60px;
-        padding: 20px;
-        width: 29cm;
-    }
-    .bannerprincipal{
-        height: 13cm;
-        width: 95%;
-    }
-/* Novedades de productos */
-/* Producto 1 */
+    
+    /* Carousel */
+    .carusel{
+        margin: 30px 17cm;
+        }
+    
+    /* Novedades de productos */
     .sectionIndex{
         width: 30cm;
-        margin: 30px 20px 30px 30px;
+        margin: 40px 2cm;
     }
-    h2{
-        font-size: 1cm;
-    }
-/* Producto 2 */
-/* Aside */
+    
+    /* Publicidad */
     .aside{
+        margin: 20px 2.7cm;
         width: 30cm;
     }
-/* Footer */
+    /* Footer */
     footer{
-        width: 35cm;
+        font-size: 15px;
+        width: 34cm;
     }
-/* Página Ranking */
-/* La publicidad Aside va a ir del lado izquierdo seguramente con grid. Por eso la tabla esta corrida */
-/* Tabla */
+
+    /* Página RANKING */
+    /* Tabla */
     table{
-    margin: 30px 5.8cm 30px 5cm;
-    padding: 10px;
-    width: 25cm;
-}
-/* Top 1*/
-.divTop1{
-    margin: 30px 2.5cm 30px 10cm;
-    width: 15cm;
-}
-/* Explicación */
-.h3Rank{
-    font-size: x-large;
-    margin: 0px 0px 10px 0px;
-}
-.divExplicacion{
-    margin: 30px 6cm 30px 4.5cm;
-    width: 25cm;
-}
-.divPexplicacion{
-    line-height: 25px;
+        margin: 40px 20px 40px 3.4cm;
+        padding: 10px;
+        width: 27cm;
+    }
+
+    /* Top 1*/
+    .divTop1{
+        margin: 40px 2cm 40px 9cm;
+        padding: 20px;
+        width: 15cm;
+    }
+
+    /* Explicación */
+    .divExplicacion{
+        margin: 40px 20px 40px 7cm;
+        padding: 20px;
+        width: 20cm;
+    }
+
+    /* Compra en Ranking */
+    .divCanvas{
+        width: 20cm;
+        margin: 30px 20px 40px 7cm;
+    }
+    .botonCompra{
+        width: 20%;
+        height: 10%;
+        margin: 10px;
+    }
+
+    /* Página COMPRAS */
+    /* Compra */
+    .card{
+        margin: 30px 12px;
+        width: max-content;
+    }
+    .card-img-top{
+        width: 5cm;
+        height: 20%;
+    }
+    .botonCompra{
+        width: 70%;
+    }
+    .estrellas{
+        width: 50%;
+        height: 50%;
+    }
+
+    /* Publicidad */
+    .fender{
+        margin: 40px 20px 40px 15cm;
+        height: 5cm;
+        width: 20cm;
+    }
+
+    /* Página NOVEDADES */
+    .itemVideo1{
+        padding: 15px;
+        margin: 20px 10px 30px 4.5cm;
+        width: 25cm;
+        height: max-content;
+    }
+    .itemNov1{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 10px 10px 2cm;
+    }
+    .itemNov2{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 2cm 10px 14cm;
+    }
+    .itemVideo2{
+        padding: 15px;
+        margin: 10px 10px 30px 4.5cm;
+        width: 25cm;
+        height: max-content;
+    }
+    .itemNov3{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 10px 10px 2cm;
+    }
+    .itemNov4{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 2cm 10px 14cm;
+    }
+    /* Compra Falsa */
+    .compraFalsa{
+        width: 20cm;
+        height: 4cm;
+    }
+
+    /* Página CONTACTO */
+    .formularioContacto{
+        width: 30cm;
+    }
+    .formulario{
+        width: 30cm;
+        margin: 20px 20px 20px 4cm;
+    }
+    .divFinal{
+        margin: 20px 20px 20px 7cm;
+        width: 20cm;
+        height: 5cm;
+    }
 }
 
-/* Publicidad */
-.fifa{
-    width: 60%;
-    height: 3%;
+/* MEDIA 320px a 539px*/
+
+@media screen and (max-width: 539px){
+    /* Página INDEX y comandos generales */
+    body{
+        background-size:cover;
+    }
+    .nav-item{
+        margin: 5px;
+        border-radius: 5px;
+        padding: 3px;
+    }
+    
+    /* Nav CSS */
+    .logo{
+        height: 5cm;
+        width: 5cm;
+        margin: 5px;
+    }
+    .navP{
+        font-size: larger;
+    }
+    header{
+        margin: 0px 0px 30px 0px;
+        width: 34cm;
+    }
+    
+    /* Título */
+    .divH1{
+        width: 30cm;
+        border-radius: 7px;
+        border: 4px solid #b65c02;
+        margin: 20px 70px;
+    }
+    
+    /* Carousel */
+    .carusel{
+        margin: 30px 17cm;
+        }
+    
+    /* Novedades de productos */
+    .sectionIndex{
+        width: 30cm;
+        margin: 40px 2cm;
+    }
+    
+    /* Publicidad */
+    .aside{
+        margin: 20px 2.7cm;
+        width: 30cm;
+    }
+    /* Footer */
+    footer{
+        font-size: 15px;
+        width: 34cm;
+    }
+
+    /* Página RANKING */
+    /* Tabla */
+    table{
+        margin: 40px 20px 40px 3.4cm;
+        padding: 10px;
+        width: 27cm;
+    }
+
+    /* Top 1*/
+    .divTop1{
+        margin: 40px 2cm 40px 9cm;
+        padding: 20px;
+        width: 15cm;
+    }
+
+    /* Explicación */
+    .divExplicacion{
+        margin: 40px 20px 40px 7cm;
+        padding: 20px;
+        width: 20cm;
+    }
+
+    /* Compra en Ranking */
+    .divCanvas{
+        width: 20cm;
+        margin: 30px 20px 40px 7cm;
+    }
+    .botonCompra{
+        width: 20%;
+        height: 10%;
+        margin: 10px;
+    }
+
+    /* Página COMPRAS */
+    /* Compra */
+    .card{
+        margin: 12px 10px 12px 30px;
+        width: max-content;
+    }
+    .card-img-top{
+        width: 5cm;
+        height: 20%;
+    }
+    .botonCompra{
+        width: 70%;
+    }
+    .estrellas{
+        width: 50%;
+        height: 50%;
+    }
+
+    /* Publicidad */
+    .fender{
+        margin: 40px 20px 40px 15cm;
+        height: 5cm;
+        width: 20cm;
+    }
+
+    /* Página NOVEDADES */
+    .itemVideo1{
+        padding: 15px;
+        margin: 20px 10px 30px 4.5cm;
+        width: 25cm;
+        height: max-content;
+    }
+    .itemNov1{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 10px 10px 2cm;
+    }
+    .itemNov2{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 2cm 10px 11cm;
+    }
+    .itemVideo2{
+        padding: 15px;
+        margin: 10px 10px 30px 4.5cm;
+        width: 25cm;
+        height: max-content;
+    }
+    .itemNov3{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 10px 10px 2cm;
+    }
+    .itemNov4{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 2cm 10px 11cm;
+    }
+    /* Compra Falsa */
+    .compraFalsa{
+        width: 20cm;
+        height: 4cm;
+    }
+
+    /* Página CONTACTO */
+    .formularioContacto{
+        width: 30cm;
+    }
+    .formulario{
+        width: 30cm;
+        margin: 20px 20px 20px 4cm;
+    }
+    .divFinal{
+        margin: 20px 20px 20px 7cm;
+        width: 20cm;
+        height: 5cm;
+    }
 }
 
-/* Página Compras*/
+/* MEDIA 540px a 760px*/
 
-.divCompras{
-    width: 170%;
-    padding: 15px;
-    margin: 10px 10px 10px 30px;
-}
-.itemH2{
-    height: 30%;
-    width: 70%;
-}
-.itemFoto{
-    width: 120%;
-    height: 90%;
-    margin: -65px 0px 0px 0px;
-}
-.itemTexto{
-    margin: 60px 10px 10px 60px;
-    width: 80%;
-    height: 110%;
-}
-.itemPrecio{
-    margin: 120px 0px 0px 60px;
-}
-.itemEstrellas{
-    width: 90%;
-    height: 50%;
-    margin: 100px 0px 0px 5px;
-}
-.itemCompra{
-    width: 60%;
-    margin: 60px 0px 0px 4cm;
-}
-.itemCarrito{
-    height: 65%;
-    width: 40%;
-    margin: 20px 3cm 0px 3cm;
-}
-/* Publicidad */
-.fender{
-    margin: 30px 10px 30px 25cm;
-    height: 100%;
-    width: 200%;
+@media screen and (max-width: 760px){
+    /* Página INDEX y comandos generales */
+    body{
+        background-size:cover;
+    }
+    .nav-item{
+        margin: 5px;
+        border-radius: 5px;
+        padding: 3px;
+    }
+    
+    /* Nav CSS */
+    .logo{
+        height: 5cm;
+        width: 5cm;
+        margin: 5px;
+    }
+    .navP{
+        font-size: larger;
+    }
+    header{
+        margin: 0px 0px 30px 0px;
+        width: 34cm;
+    }
+    
+    /* Título */
+    .divH1{
+        width: 30cm;
+        border-radius: 7px;
+        border: 4px solid #b65c02;
+        margin: 20px 70px;
+    }
+    
+    /* Carousel */
+    .carusel{
+        margin: 30px 17cm;
+        }
+    
+    /* Novedades de productos */
+    .sectionIndex{
+        width: 30cm;
+        margin: 40px 2cm;
+    }
+    
+    /* Publicidad */
+    .aside{
+        margin: 20px 2.7cm;
+        width: 30cm;
+    }
+    /* Footer */
+    footer{
+        font-size: 15px;
+        width: 34cm;
+    }
+
+    /* Página RANKING */
+    /* Tabla */
+    table{
+        margin: 40px 20px 40px 3.4cm;
+        padding: 10px;
+        width: 27cm;
+    }
+
+    /* Top 1*/
+    .divTop1{
+        margin: 40px 2cm 40px 9cm;
+        padding: 20px;
+        width: 15cm;
+    }
+
+    /* Explicación */
+    .divExplicacion{
+        margin: 40px 20px 40px 7cm;
+        padding: 20px;
+        width: 20cm;
+    }
+
+    /* Compra en Ranking */
+    .divCanvas{
+        width: 20cm;
+        margin: 30px 20px 40px 7cm;
+    }
+    .botonCompra{
+        width: 20%;
+        height: 10%;
+        margin: 10px;
+    }
+
+    /* Página COMPRAS */
+    /* Compra */
+    .card{
+        margin: 12px 10px 12px 30px;
+        width: max-content;
+    }
+    .card-img-top{
+        width: 5cm;
+        height: 20%;
+    }
+    .botonCompra{
+        width: 70%;
+    }
+    .estrellas{
+        width: 50%;
+        height: 50%;
+    }
+
+    /* Publicidad */
+    .fender{
+        margin: 40px 20px 40px 15cm;
+        height: 5cm;
+        width: 20cm;
+    }
+
+    /* Página NOVEDADES */
+    .itemVideo1{
+        padding: 15px;
+        margin: 20px 10px 30px 4.5cm;
+        width: 25cm;
+        height: max-content;
+    }
+    .itemNov1{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 10px 10px 2cm;
+    }
+    .itemNov2{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 2cm 10px 8cm;
+    }
+    .itemVideo2{
+        padding: 15px;
+        margin: 10px 10px 30px 4.5cm;
+        width: 25cm;
+        height: max-content;
+    }
+    .itemNov3{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 10px 10px 2cm;
+    }
+    .itemNov4{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 2cm 10px 8cm;
+    }
+    /* Compra Falsa */
+    .compraFalsa{
+        width: 20cm;
+        height: 4cm;
+    }
+
+    /* Página CONTACTO */
+    .formularioContacto{
+        width: 30cm;
+    }
+    .formulario{
+        width: 30cm;
+        margin: 20px 20px 20px 4cm;
+    }
+    .divFinal{
+        margin: 20px 20px 20px 7cm;
+        width: 20cm;
+        height: 5cm;
+    }
 }
 
-/* Página Novedades*/
+/* MEDIA 761 a 900*/
 
-.itemVideo1{
-    padding: 15px;
-    margin: 20px 10px 20px 3.6cm;
-    width: 300%;
-}
-.itemNov1{
-    width: 300%;
-    padding: 15px;
-    margin: 10px 13cm 10px 2.2cm;
-}
-.itemNov2{
-    width: 300%;
-    padding: 15px;
-    margin: 10px 2cm 10px 13cm;
-}
-.itemVideo2{
-    padding: 15px;
-    margin: 20px 10px 20px 3.6cm;
-    width: 300%;
-}
-.itemNov3{
-    width: 300%;
-    padding: 15px;
-    margin: 10px 13cm 10px 2.2cm;
-}
-.itemNov4{
-    width: 300%;
-    padding: 15px;
-    margin: 10px 2cm 10px 13cm;
-}
-.videoNov{
-    margin: 15px;
-}
-.imgNov{
-    width: 65%;
-    height: 65%;
-}
-/* Publicidad */
-.netflix{
-    width: 60%;
-    height: 5cm;
-    border: solid #712300 5px;
-    border-radius: 10px;
-    margin: 10px 0px 10px 2cm;
-}
+@media screen and (max-width: 900px){
+    /* Página INDEX y comandos generales */
+    body{
+        background-size:cover;
+    }
+    .nav-item{
+        margin: 5px;
+        border-radius: 5px;
+        padding: 3px;
+    }
+    
+    /* Nav CSS */
+    .logo{
+        height: 5cm;
+        width: 5cm;
+        margin: 5px;
+    }
+    .navP{
+        font-size: larger;
+    }
+    header{
+        margin: 0px 0px 30px 0px;
+        width: 34cm;
+    }
+    
+    /* Título */
+    .divH1{
+        width: 30cm;
+        border-radius: 7px;
+        border: 4px solid #b65c02;
+        margin: 20px 70px;
+    }
+    
+    /* Carousel */
+    .carusel{
+        margin: 30px 17cm;
+        }
+    
+    /* Novedades de productos */
+    .sectionIndex{
+        width: 30cm;
+        margin: 40px 2cm;
+    }
+    
+    /* Publicidad */
+    .aside{
+        margin: 20px 2.7cm;
+        width: 30cm;
+    }
+    /* Footer */
+    footer{
+        font-size: 15px;
+        width: 34cm;
+    }
 
-/* Página Contacto */
-.sectionForm{
-    margin: 20px 0px 20px 50px;
-    padding: 20px;
-    width: 29cm;
-}
-.divFinal{
-    font-size: 2.5cm;
-    margin: 20px 2cm 20px 2cm;
-    width: 30cm;
-}
+    /* Página RANKING */
+    /* Tabla */
+    table{
+        margin: 40px 20px 40px 3.4cm;
+        padding: 10px;
+        width: 27cm;
+    }
+
+    /* Top 1*/
+    .divTop1{
+        margin: 40px 2cm 40px 9cm;
+        padding: 20px;
+        width: 15cm;
+    }
+
+    /* Explicación */
+    .divExplicacion{
+        margin: 40px 20px 40px 7cm;
+        padding: 20px;
+        width: 20cm;
+    }
+
+    /* Compra en Ranking */
+    .divCanvas{
+        width: 20cm;
+        margin: 30px 20px 40px 7cm;
+    }
+    .botonCompra{
+        width: 20%;
+        height: 10%;
+        margin: 10px;
+    }
+
+    /* Página COMPRAS */
+    /* Compra */
+    .card{
+        margin: 12px 10px 12px 30px;
+        width: max-content;
+    }
+    .card-img-top{
+        width: 5cm;
+        height: 20%;
+    }
+    .botonCompra{
+        width: 70%;
+    }
+    .estrellas{
+        width: 50%;
+        height: 50%;
+    }
+
+    /* Publicidad */
+    .fender{
+        margin: 40px 20px 40px 15cm;
+        height: 5cm;
+        width: 20cm;
+    }
+
+    /* Página NOVEDADES */
+    .itemVideo1{
+        padding: 15px;
+        margin: 20px 10px 30px 4.5cm;
+        width: 25cm;
+        height: max-content;
+    }
+    .itemNov1{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 10px 10px 2cm;
+    }
+    .itemNov2{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 2cm 10px 6cm;
+    }
+    .itemVideo2{
+        padding: 15px;
+        margin: 10px 10px 30px 4.5cm;
+        width: 25cm;
+        height: max-content;
+    }
+    .itemNov3{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 10px 10px 2cm;
+    }
+    .itemNov4{
+        width: 14cm;
+        padding: 15px;
+        margin: 10px 2cm 10px 6cm;
+    }
+    /* Compra Falsa */
+    .compraFalsa{
+        width: 20cm;
+        height: 4cm;
+    }
+
+    /* Página CONTACTO */
+    .formularioContacto{
+        width: 30cm;
+    }
+    .formulario{
+        width: 30cm;
+        margin: 20px 20px 20px 4cm;
+    }
+    .divFinal{
+        margin: 20px 20px 20px 7cm;
+        width: 20cm;
+        height: 5cm;
+    }
 }
