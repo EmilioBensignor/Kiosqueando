@@ -798,10 +798,10 @@ th{
         font-size: 1.2vw;
         border: #712300 3px solid;
     }
-    .td{
+    td{
         border: black solid 1px;
     }
-    .th{
+    th{
         border: black solid 1px;
     }
     .divTop1{
@@ -819,7 +819,6 @@ th{
     }
     .divPexplicacion{
         font-size: x-small;
-    border: #b65c02 solid 3px;
     }
     .divCanvas{
         width: 80%;
