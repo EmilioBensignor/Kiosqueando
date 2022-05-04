@@ -681,6 +681,9 @@ th{
         font-size: x-small;
         font-weight: bold;
     }
+    .pComprafalsa{
+        text-align: center;
+    }
 }
 
 /* Media 900px*/
@@ -807,13 +810,19 @@ th{
         width: 80%;
     }
     .h2Nov{
-        font-size: 2.1vw;
+        font-size: 2.5vw;
         margin-top: 1%;
         padding: 0.5vw;
         text-align: center;
     }
     .h3Nov{
-        font-size: 2.1vw;
+        font-size: 2.5vw;
+    }
+    .h4Comprafalsa{
+        font-size: 3vw;
+    }
+    .pComprafalsa{
+        font-size: 2.7vw;
     }
 }
 
@@ -873,6 +882,13 @@ th{
         height: 70vw;
         margin-bottom: 5%;
     }
+    .pNov{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .h4Comprafalsa{
+        text-align: center;
+    }
 }
 
 /* Media 450px*/
@@ -891,6 +907,16 @@ th{
     }
     .btnForm{
         font-size: small;
+    }
+    .h2Nov{
+        font-size: 3vw;
+    }
+    .h3Nov{
+        font-size: 3vw;
+        margin-top: 1vw;
+    }
+    .pNov{
+        font-size: 3vw;
     }
 }
 
@@ -911,6 +937,22 @@ th{
     }
     .btn-Compra{
         font-size: small;
+    }
+    .itemNov1{
+        height: 80vw;
+    }
+    .itemNov2{
+        height: 80vw;
+    }
+    .itemNov3{
+        height: 80vw;
+    }
+    .itemNov4{
+        height: 80vw;
+    }
+    .pNov{
+        font-size: 2.5vw;
+        text-align: center;
     }
 }
 
