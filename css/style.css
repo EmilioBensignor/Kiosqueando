@@ -253,11 +253,11 @@ table{
     border-collapse: collapse;
 }
 td{
-    border: solid black;
+    border: solid black 3px;
     padding: 1%;
 }
 th{
-    border: solid black;
+    border: solid black 3px;
     padding: 1%;
 }
 .thTamaño{
@@ -752,20 +752,33 @@ th{
 /* Media 682px*/
 
 @media only screen and (max-width: 682px){
-    .sandias{
-        width: 35vw;
+    .logo{
+        border: solid 2px;
     }
-    .milkaoreo{
-        width: 35vw;
+    .divH1{
+        border: #b65c02 solid 2px;
     }
     .fotosBanner{
         width: 80%;
+        border:#712300 solid 3px;
     }
     .banner{
         width: 100%;
     }
+    .sectionIndex{
+        border: 3px solid #ff9800;
+    }
+    .div2{
+        border: 2px solid #ff9800;
+    }
+    .sandias{
+        width: 35vw;
+    }
     .psandias{
         font-size: small;
+    }
+    .milkaoreo{
+        width: 35vw;
     }
     .pmilka{
         font-size: small;
@@ -783,31 +796,71 @@ th{
         overflow: scroll;
         padding: 0%;
         font-size: 1.2vw;
+        border: #712300 3px solid;
+    }
+    .td{
+        border: black solid 1px;
+    }
+    .th{
+        border: black solid 1px;
+    }
+    .divTop1{
+        border:#712300 2px solid;
     }
     .h3Selva{
         font-size: small;
     }
     .divExplicacion{
         width: 80%;
+        border: solid #b65c02 2px;
     }
     .h3Rank{
         font-size: small;
     }
     .divPexplicacion{
         font-size: x-small;
+    border: #b65c02 solid 3px;
     }
     .divCanvas{
         width: 80%;
         height: 12vw;
+        border: solid #b65c02 2px;
     }
     .botonCanva{
         font-size: xx-small;
+    }
+    .descripcionCompra{
+        border: 2px solid #712300;
+    }
+    .precioCantidadAñadir{
+        border: 2px solid #712300;
+    }
+    .fender{
+        border: #712300 solid 4px;
     }
     .fotoCompra{
         height: 15vw;
     }
     .compraFalsa{
         width: 80%;
+    }
+    .itemNov1{
+        border: #b65c02 solid 3px;
+    }
+    .itemNov2{
+        border: #b65c02 solid 3px;
+    }
+    .itemNov3{
+        border: #b65c02 solid 3px;
+    }
+    .itemNov4{
+        border: #b65c02 solid 3px;
+    }
+    .itemVideo1{
+        border: #b65c02 solid 3px;
+    }
+    .itemVideo2{
+        border: #b65c02 solid 3px;
     }
     .h2Nov{
         font-size: 2.5vw;
@@ -823,6 +876,9 @@ th{
     }
     .pComprafalsa{
         font-size: 2.7vw;
+    }
+    .netflix{
+        border: #712300 solid 4px;
     }
 }
 
@@ -842,6 +898,7 @@ th{
     }
     .compra{
         font-size: 1.7vw;
+        width: 17vw;
     }
     .redesSociales{
         flex-wrap: nowrap;
