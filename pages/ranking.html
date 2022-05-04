@@ -56,19 +56,21 @@
         </nav>
     </header>
     <main>
-        <div class="divH1">
-            <h1>Ranking</h1>
+        <div class="divTitulo">
+            <div class="divH1">
+                <h1>Ranking</h1>
+            </div>
         </div>
-        <section>
-            <!-- Tabla -->
+        <!-- Tabla -->
+        <div class="divPadretabla">
             <div class="divTabla">
                 <table class="tabla">
                     <tr>
                         <th>Golosina</th>
-                        <th>Sabor</th>
-                        <th>Textura</th>
-                        <th>Presentación</th>
-                        <th class="exp">Experiencia general</th>
+                        <th class="thTamaño">Sabor</th>
+                        <th class="thTamaño">Textura</th>
+                        <th class="thTamaño">Presentación</th>
+                        <th class="thTamaño">Experiencia general</th>
                         <th>Momento</th>
                         <th>Categoría</th>
                     </tr>
@@ -335,16 +337,18 @@
                     </tr>
                 </table>
             </div>
-        </section>
-        <section class="divTop1">
-            <h3 class="h3Rank">Top 1 del momento</h3>
-            <div class="divPalitos">
-                <h3>Palitos de la Selva</h3>
-                <img class="imgPalitos" src="../resource/palitosdelaselva.png">
+        </div>
+        <div class="divPadretop1">
+            <div class="divTop1">
+                <div class="divPalitos">
+                    <h3 class="h3Rank">Top 1 del momento</h3>
+                    <h3 class="h3Selva">Palitos de la Selva</h3>
+                    <img class="imgPalitos" src="../resource/palitosdelaselva.png">
+                </div>
             </div>
-        </section>
+        </div>
         <!-- Explicación -->
-        <section>
+        <div class="divPadreexplicacion">
             <div class="divExplicacion">
                 <h3 class="h3Rank">
                     Explicación de la tabla
@@ -358,34 +362,37 @@
                     <p>Categoría: ¿A qué otras golosinas se parece?</p>
                 </div>
             </div>
-        </section>
-        <div class="divCanvas">
-            <h5>Aquí para más información</h5>
-            <button class="btn btn-warning botonCanva" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-            aria-controls="offcanvasExample">
-            Ver más
-            </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">¿Cómo viene la experiencia en Kiosqueando?</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div>
-                        Te dejamos a fácil acceso las páginas para que puedas hacer tus compras, ver las últimas novedades o hasta recomendar una golosina que quieras que esté en el stock
+        </div>
+        <!-- Más información -->
+        <div class="divPadrecanvas">
+            <div class="divCanvas">
+                <h5 class="h5Canvas">Aquí para más información</h5>
+                <button class="btn btn-warning botonCanva" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                Ver más
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">¿Cómo viene la experiencia en Kiosqueando?</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-warning dropdown-toggle opciones" type="button" id="dropdownMenuButton"
-                            data-bs-toggle="dropdown">
-                            Opciones
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="./compras.html">Compras</a></li>
-                            <li><a class="dropdown-item" href="./novedades.html">Novedades</a></li>
-                            <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
-                        </ul>
+                    <div class="offcanvas-body">
+                        <div>
+                            Te dejamos a fácil acceso las páginas para que puedas hacer tus compras, ver las últimas novedades o hasta recomendar una golosina que quieras que esté en el stock
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-warning dropdown-toggle opciones" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown">
+                                Opciones
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="./compras.html">Compras</a></li>
+                                <li><a class="dropdown-item" href="./novedades.html">Novedades</a></li>
+                                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

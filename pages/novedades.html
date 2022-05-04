@@ -57,10 +57,12 @@
     </header>
     <main>
         <!-- Novedades -->
-        <div class="divH1">
-            <h1>Novedades</h1>
+        <div class="divTitulo">
+            <div class="divH1">
+                <h1>Novedades</h1>
+            </div>
         </div>
-        <div class="divNovedades">
+        <div class="divPadrevideo">
             <!-- Video 1 -->
             <div class="itemVideo1">
                 <p class="pNov">¡Atención! Mira a estos niños y niñas intentando no comer un malvavisco</p>
@@ -69,6 +71,8 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
+        </div>
+        <div class="divNovedades">
             <!-- Próximamente 1 y 2 -->
             <div class="itemNov1">
                 <h2 class="h2Nov">Próximamente en gomitas</h2>
@@ -83,14 +87,6 @@
                 <img class="imgNov" src="../resource/funpop.png">
                 <h3 class="h3Nov">Pop Evolution</h3>
                 <img class="imgNov" src="../resource/popevolution.png">
-            </div>
-            <!-- Video 2 -->
-            <div class="itemVideo2">
-                <p class="pNov">Mira que piensa Ibai sobre las golosinas que comemos en nuestro día a día</p>
-                <iframe class="videoNov" src="https://www.youtube.com/embed/cGC-U8c2kvI" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
             </div>
             <!-- Próximamente 3 y 4 -->
             <div class="itemNov3">
@@ -108,34 +104,46 @@
                 <img class="imgNov" src="../resource/skittles.png">
             </div>
         </div>
-        <div class="compraFalsa">
-            <h4>¿Te gustaría comprar estos productos?</h4>
-            <p>Dejanos tu comentario en la página de contacto.
-                ¡Queremos escucharte!
-            </p>
-            <!-- Botón -->
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Comprar
-                </button>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">No está disponible</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                La golosina que ha seleccionado todavía no está en stock. Puede contactarnos para que esta golosina esté a la venta
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+        <div class="divPadrevideo">
+            <!-- Video 2 -->
+            <div class="itemVideo2">
+                <p class="pNov">Mira que piensa Ibai sobre las golosinas que comemos en nuestro día a día</p>
+                <iframe class="videoNov" src="https://www.youtube.com/embed/cGC-U8c2kvI" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="divPadrecomprafalsa">
+            <div class="compraFalsa">
+                <h4>¿Te gustaría comprar estos productos?</h4>
+                <p>Dejanos tu comentario en la página de contacto.
+                    ¡Queremos escucharte!
+                </p>
+                <!-- Botón -->
+                <button type="button" class="btn btn-danger btn-Compra" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Comprar
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">No está disponible</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    La golosina que ha seleccionado todavía no está en stock. Puede contactarnos para que esta golosina esté a la venta
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+            </div>
         </div>
     </main>
     <!-- Publicidad -->
